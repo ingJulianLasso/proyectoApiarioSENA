@@ -1,1 +1,1 @@
-angular.module('apiarioApp', ['ngRoute']);
+angular.module('apiarioApp', ['ngRoute', 'ngStorage']);

@@ -1,1 +1,3 @@
-angular.module('apiarioApp', ['ngRoute', 'ngStorage']);
+'use strict';
+
+angular.module('apiarioApp', ['ngRoute', 'ngRoute.middleware', 'ngStorage']);

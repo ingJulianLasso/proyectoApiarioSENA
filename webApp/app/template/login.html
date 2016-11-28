@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/signin.css">
+<form class="form-signin" ng-submit="submit()">
+  <h2 class="form-signin-heading">Por favor identifiquese</h2>
+  <input ng-model="login.user" autocomplete="off" type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus>
+  <input ng-model="login.pass" type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="login.rememberme" value="true"> Recordar me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Identificarse</button>
+  <br ng-show="alertError || alertWarning">
+  <div ng-show="alertError" class="alert alert-danger" role="alert">
+    <ul>
+      <li ng-repeat="msg in msgAlertError">{{ msg }}</li>
+    </ul>
+  </div>
+  <div ng-show="alertWarning" class="alert alert-warning" role="alert">{{ msgAlertWarning }}</div>
+</form>
